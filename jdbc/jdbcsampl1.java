@@ -17,12 +17,12 @@ public class jdbcsampl1
 		 
 		 while(resultSet.next())
 		 {
-			 System.out.println(resultSet.getInt(1));
-			 System.out.println(resultSet.getString(2));
-			 System.out.println(resultSet.getString(3));
-			 System.out.println(resultSet.getInt(4));
+			 System.out.print("\t"+resultSet.getInt(1));
+			 System.out.print("\t"+resultSet.getString(2));
+			 System.out.print("\t"+resultSet.getString(3));
+			 System.out.print("\t"+resultSet.getInt(4));
 			 
-			 
+			 System.out.println();	
 		 }
 		 statement.close();
 		 conn.close();
